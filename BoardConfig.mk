@@ -27,7 +27,7 @@
 -include vendor/samsung/noblelte/BoardConfigVendor.mk
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := zenlte,zenltedd,zenltedv,zenltejv,zenltektt,zenltelgt,zenlteskt,zenltezt,zenltexx
+TARGET_OTA_ASSERT_DEVICE := zenlte,zenltedd,zenltedv,zenltejv,zenltektt,zenltelgt,zenlteskt,zenltezt,zenltexx,zenltetmo
 
 # Include path
 TARGET_SPECIFIC_HEADER_PATH += device/samsung/zenlte/include
