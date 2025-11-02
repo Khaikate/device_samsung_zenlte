@@ -22,19 +22,22 @@
 # lines, full and zerofltecan, hence its name.
 #
 
-# Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-
 # Inherit from zenlte device
 $(call inherit-product, device/samsung/zenlte/device.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
-NAD_BUILD_TYPE := OFFICIAL
+# Inherit from the 64 bit configuration
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+
+# Inherit from the common Open Source product configuration
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
+
+# Inherit some common PixelExperience stuff
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+TARGET_BOOT_ANIMATION_RES := 1440
+TARGET_GAPPS_ARCH := arm64
 
 # Set those variables here to overwrite the inherited values.
-PRODUCT_NAME := nad_zenlte
+PRODUCT_NAME := aosp_zenlte
 PRODUCT_DEVICE := zenlte
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := Samsung

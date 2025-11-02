@@ -32,8 +32,5 @@ TARGET_OTA_ASSERT_DEVICE := zenlte,zenltedd,zenltedv,zenltejv,zenltektt,zenltelg
 # Include path
 TARGET_SPECIFIC_HEADER_PATH += device/samsung/zenlte/include
 
-# Kernel
-TARGET_KERNEL_CONFIG := lineageos_zenlte_defconfig
-
 # Radio
 BOARD_MODEM_TYPE := ss333

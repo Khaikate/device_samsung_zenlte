@@ -1,7 +1,7 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/nad_zenlte.mk
+    $(LOCAL_DIR)/aosp_zenlte.mk
 
 COMMON_LUNCH_CHOICES := \
-    nad_zenlte-user \
-    nad_zenlte-userdebug \
-    nad_zenlte-eng
+    aosp_zenlte-user \
+    aosp_zenlte-userdebug \
+    aosp_zenlte-eng
